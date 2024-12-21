@@ -1,0 +1,135 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: full;
+  color: #fff;
+  background-color: #3e3e3e;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todolist-container {
+  background-color: #282828;
+  height: 92vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todolist-box {
+  background-color: #3e3e3e;
+  height: 70%;
+  width: 30%;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.todo-input > input {
+  width: 74%;
+  height: 25.2px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 0 5px;
+}
+
+.todo-input > button {
+  height: 27px;
+  cursor: pointer;
+  width: 20%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #fff;
+  transition-duration: 300ms;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.todo-input > button:hover {
+  background-color: #979797;
+  color: #fff;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2px;
+  overflow-y: auto;
+  height: 89%;
+  margin-top: 20px;
+}
+
+.todo-text {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.todo-item > .buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: -7px;
+}
+
+.todo-item > .buttons > button {
+  cursor: pointer;
+  transition-duration: 300ms;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid gray;
+  font-size: 12.4px;
+  font-weight: 400;
+  padding: 2px 5px;
+}
+
+.todo-item > .buttons > button:hover {
+  background-color: #979797;
+  color: #fff;
+}
+
+.is-editing {
+  margin-bottom: 13px;
+  margin-top: -10px;
+}
+
+.is-editing > input {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 50%;
+  height: 21px;
+  padding: 0 5px;
+}
+
+.is-editing > button {
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #fff;
+  padding: 0 7px;
+  font-size: 12.3px;
+  height: 23px;
+  transition-duration: 300ms;
+}
+
+.is-editing > button:hover {
+  background-color: #979797;
+  color: #fff;
+}
+
+.line {
+  background-color: gray;
+  height: 1px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
